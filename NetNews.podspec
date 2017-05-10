@@ -132,7 +132,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '2.3' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
   s.ios.deployment_target = '8.0'
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   #s.dependency 'AFNetworking', '~> 2.6.3','XMLDictionary', '~> 1.4','GRAESCrypt', '~> 1.0.1','KeychainAccess', '~> 2.3.6'
