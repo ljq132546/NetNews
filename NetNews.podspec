@@ -25,8 +25,9 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+                   NetNews 本人整理的一些功能类
+                   NetNews is the functional class listed by myself.
                    DESC
-
   s.homepage     = "https://github.com/ljq132546/NetNews"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -90,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "NetNews.swift"
+  s.source_files  = "*.swift"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -117,7 +118,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks   = 'CoreGraphics', 'UIKit', 'Foundation', 'QuartzCore', 'MapKit'
+  s.frameworks   = 'CoreGraphics', 'UIKit', 'Foundation', 'QuartzCore'
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -131,7 +132,9 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '2.3' }
+  s.ios.deployment_target = '8.0'
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "JSONKit", "~> 1.4",'AFNetworking', '~> 2.6.3','XMLDictionary', '~> 1.4','GRAESCrypt', '~> 1.0.1','KeychainAccess', '~> 2.3.6'
+  #s.dependency 'AFNetworking', '~> 2.6.3','XMLDictionary', '~> 1.4','GRAESCrypt', '~> 1.0.1','KeychainAccess', '~> 2.3.6'
 
 end
